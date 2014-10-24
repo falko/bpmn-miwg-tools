@@ -224,8 +224,9 @@ public class TestRunner implements TestTool {
                 expectedBpmnXml, actualBpmnXml);
         List<Output> outputs = new ArrayList<Output>();
         for (Difference diff : diffs) {
-            Output output = new Output(OutputType.finding,
-                    describeDifference(diff));
+            DetailedOutput detail = describeDifference(diff);
+            // System.out.println("Detail: " + detail.getDescription());
+            Output output = new Output(OutputType.finding, detail);
             output.setDescription(String.format(
                     "Difference found in %1$s (id:%2$s)",
                     diff.getDescription(), diff.getId()));

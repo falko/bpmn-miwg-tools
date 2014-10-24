@@ -30,7 +30,7 @@ public class DetailedOutput {
 		this.getDetails().add(detail);
 	}
 
-	private List<Detail> getDetails() {
+	public List<Detail> getDetails() {
 		if (details == null) {
 			details = new LinkedList<Detail>();
 		}

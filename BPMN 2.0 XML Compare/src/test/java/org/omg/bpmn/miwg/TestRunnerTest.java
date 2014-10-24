@@ -11,6 +11,8 @@ import java.util.Collection;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
+import org.omg.bpmn.miwg.output.Detail;
+import org.omg.bpmn.miwg.output.DetailedOutput;
 import org.omg.bpmn.miwg.testresult.Output;
 import org.omg.bpmn.miwg.testresult.TestResults;
 
@@ -28,8 +30,7 @@ public class TestRunnerTest {
                 + File.separator + TOOL_ID;
         try {
             String results = TestRunner.runXmlCompareTest(refFolderPath,
-                    testFolderPath,
-                    Variant.roundtrip);
+                    testFolderPath, Variant.roundtrip);
             assertTrue(results.contains("data-test=\"A.1.0.bpmn\""));
             assertTrue(results.contains("data-test=\"A.2.0.bpmn\""));
             assertTrue(results.contains("data-test=\"A.3.0.bpmn\""));
@@ -57,8 +58,19 @@ public class TestRunnerTest {
             assertNotNull(compareStream);
             Collection<? extends Output> significantDifferences = new TestRunner()
                     .getSignificantDifferences(bpmnStream, compareStream);
-            System.out.println(significantDifferences);
-            assertEquals(33, significantDifferences.size());
+            System.out.println("Found " + significantDifferences.size()
+                    + " differences");
+            for (Output output : significantDifferences) {
+                System.out.println("  " + output.getDescription());
+                for (DetailedOutput wrapper : output.getDetail()) {
+                    for (int i = 0; i < wrapper.getDetails().size(); i++) {
+                        Detail detail = wrapper.getDetails().get(i);
+                        System.out.println("    " + i + ":"
+                                + detail.getMessage());
+                    }
+                }
+            }
+            assertEquals(30, significantDifferences.size());
 
             TestResults results = new TestResults();
             org.omg.bpmn.miwg.testresult.Test test = results.addTool(TOOL_ID)

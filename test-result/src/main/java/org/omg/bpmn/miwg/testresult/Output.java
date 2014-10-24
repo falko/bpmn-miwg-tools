@@ -98,7 +98,7 @@ public class Output {
 		return this.suboutputs;
 	}
 
-	private List<DetailedOutput> getDetail() {
+	public List<DetailedOutput> getDetail() {
 		if (this.details == null) {
 			this.details = new LinkedList<DetailedOutput>();
 		}
