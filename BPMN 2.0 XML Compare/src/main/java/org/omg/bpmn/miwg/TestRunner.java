@@ -2,17 +2,17 @@
  * The MIT License (MIT)
  * Copyright (c) 2013 Signavio, OMG BPMN Model Interchange Working Group
  *
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -20,7 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- * 
+ *
  */
 
 package org.omg.bpmn.miwg;
@@ -64,12 +64,12 @@ public class TestRunner implements TestTool {
     /**
      * First argument path to folder containing the reference bpmn xml files
      * Second argument path to folder containing the bpmn files to compare with
-     * 
+     *
      * @param args
      * @throws ParserConfigurationException
      * @throws IOException
      * @throws SAXException
-     * 
+     *
      */
     public static void main(String[] args) throws SAXException, IOException,
             ParserConfigurationException {
@@ -99,7 +99,7 @@ public class TestRunner implements TestTool {
     /**
      * Performs the BPMN 2.0 XML Compare test and prints out the resulting XML
      * structure
-     * 
+     *
      * @param referenceFolderPath
      *            Path to the folder containing the reference files
      * @param testFolderPath
@@ -109,7 +109,7 @@ public class TestRunner implements TestTool {
      * @param confName
      *            configuration of what differences to ignore (denote same
      *            semantic)
-     * 
+     *
      * @return Outputs the XML structure
      * @throws ParserConfigurationException
      * @throws IOException
@@ -221,7 +221,7 @@ public class TestRunner implements TestTool {
             throws JsonParseException, JsonMappingException,
             IOException, ParserConfigurationException {
         List<Difference> diffs = getChecker().getSignificantDifferences(
-                actualBpmnXml, expectedBpmnXml);
+                expectedBpmnXml, actualBpmnXml);
         List<Output> outputs = new ArrayList<Output>();
         for (Difference diff : diffs) {
             Output output = new Output(OutputType.finding,
