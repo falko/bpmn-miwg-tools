@@ -70,7 +70,7 @@ public class TestRunnerTest {
                     }
                 }
             }
-            assertEquals(30, significantDifferences.size());
+            assertEquals(28, significantDifferences.size());
 
             TestResults results = new TestResults();
             org.omg.bpmn.miwg.testresult.Test test = results.addTool(TOOL_ID)

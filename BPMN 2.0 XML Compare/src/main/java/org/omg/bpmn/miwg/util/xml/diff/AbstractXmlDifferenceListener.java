@@ -195,6 +195,7 @@ public abstract class AbstractXmlDifferenceListener implements DifferenceListene
 					|| isCausedByLanguageSettings(difference)
 					|| isCausedByCapitalizationOfAttributeValue(difference)
                     || isCausedByAddingDefaultAttribute(difference)
+                    || isRedundantSummaryError(difference)
 					|| canDifferenceBeIgnored(difference)){
 				numIgnoredDiffs++;
 				return DifferenceListener.RETURN_IGNORE_DIFFERENCE_NODES_IDENTICAL;
@@ -596,6 +597,21 @@ public abstract class AbstractXmlDifferenceListener implements DifferenceListene
                     return true;
                 }
             }
+        }
+        return false;
+    }
+
+    /**
+     * Ignore an error that summarises errors in children that are reported
+     * separately.
+     * 
+     * @see https://github.com/bpmn-miwg/bpmn-miwg-tools/issues/10
+     * @param difference
+     * @return
+     */
+    protected boolean isRedundantSummaryError(Difference difference) {
+        if ("number of element attributes".equals(difference.getDescription())) {
+            return true;
         }
         return false;
     }
