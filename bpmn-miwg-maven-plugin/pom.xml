@@ -19,7 +19,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.7</java.version>
-    <bpmn.miwg.tools.version>0.2-SNAPSHOT</bpmn.miwg.tools.version>
+    <bpmn.miwg.test-suite.version>0.2-SNAPSHOT</bpmn.miwg.test-suite.version>
+    <bpmn.miwg.tools.version>0.2</bpmn.miwg.tools.version>
   </properties>
   
   <distributionManagement>
@@ -84,7 +85,8 @@
     <dependency>
       <groupId>org.omg.bpmn.miwg</groupId>
       <artifactId>test-suite</artifactId>
-      <version>${bpmn.miwg.tools.version}</version>
+      <version>${bpmn.miwg.test-suite.version}</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.glassfish</groupId>
