@@ -192,6 +192,7 @@ public abstract class AbstractXmlDifferenceListener implements DifferenceListene
 					|| isCausedByOptionalAttribute(difference)
 					|| isCausedByIgnorableAttributeValue(difference)
 					|| isCausedByNamespaceProblems(difference)
+                    || isCausedByAdditionalNamespace(difference)
 					|| isCausedByLanguageSettings(difference)
 					|| isCausedByCapitalizationOfAttributeValue(difference)
                     || isCausedByAddingDefaultAttribute(difference)
@@ -404,6 +405,47 @@ public abstract class AbstractXmlDifferenceListener implements DifferenceListene
 		return false;
 	}
 
+    /**
+     * Vendors may introduce new namespaces and these should not be reported as
+     * significant differences.
+     * 
+     * @param difference
+     * @return
+     * @see https://github.com/bpmn-miwg/bpmn-miwg-tools/issues/13
+     */
+    protected boolean isCausedByAdditionalNamespace(Difference difference) {
+        try {
+            Attr attr = null;
+            int len = difference.getTestNodeDetail().getNode().getAttributes()
+                        .getLength();
+            for (int i = 0; i < len; i++) {
+                Attr tmp = (Attr) difference.getTestNodeDetail().getNode()
+                        .getAttributes().item(i);
+                if (difference.getTestNodeDetail().getValue()
+                        .equals(tmp.getLocalName())) {
+                    // this is the attribute in question
+                    attr = tmp;
+                    break;
+                }
+            }
+
+            if (attr != null) {
+                String uri = attr.getNamespaceURI();
+                if (uri != null
+                        && difference.getControlNodeDetail().getNode()
+                        .getOwnerDocument().lookupNamespaceURI(uri) == null) {
+                    // So the control document does not have this namespace
+                    // that the test doc does => OK to ignore.
+                    return true;
+                }
+            }
+        } catch (NullPointerException e) {
+            // Assume because the namespace scenario we are looking for is
+            // not cause of difference and report it
+        }
+
+        return false;
+    }
 
 	/**
 	 * Ignores all differences caused by an ignored attribute (see {@link DiffConfiguration#getIgnoredAttributes()}

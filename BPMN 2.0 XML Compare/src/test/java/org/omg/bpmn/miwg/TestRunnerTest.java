@@ -18,7 +18,8 @@ import org.omg.bpmn.miwg.testresult.TestResults;
 
 public class TestRunnerTest {
 
-    private static final String TOOL_ID = "Yaoqiang BPMN Editor 2.2.18";
+    private static final String TOOL_ID_YAOQIANG2 = "Yaoqiang BPMN Editor 2.2.18";
+    private static final String TOOL_ID_W4 = "W4 BPMN+ Composer V.9.1";
     private static final String TEST_ID = "A.1.0";
     private static final String VARIANT = "roundtrip";
 
@@ -27,7 +28,7 @@ public class TestRunnerTest {
         String refFolderPath = "target" + File.separator + "test-suite"
                 + File.separator + "Reference";
         String testFolderPath = "target" + File.separator + "test-suite"
-                + File.separator + TOOL_ID;
+                + File.separator + TOOL_ID_YAOQIANG2;
         try {
             String results = TestRunner.runXmlCompareTest(refFolderPath,
                     testFolderPath, Variant.roundtrip);
@@ -46,15 +47,25 @@ public class TestRunnerTest {
     }
 
     @Test
-    public void testStreamInputs() {
+    public void testYaoqiangStreamInputs() {
+        runXmlCompare("/Reference/" + TEST_ID + ".bpmn", "/" + TOOL_ID_YAOQIANG2 + "/"
+                + TEST_ID + "-" + VARIANT + ".bpmn", 28);
+    }
+
+    @Test
+    public void testW4StreamInputs() {
+        runXmlCompare("/Reference/" + TEST_ID + ".bpmn", "/" + TOOL_ID_W4 + "/"
+                + TEST_ID + "-" + VARIANT + ".bpmn", 78);
+    }
+
+    private void runXmlCompare(String refResource, String vendorResource,
+            int expectedDiffCount) {
         InputStream bpmnStream = null;
         InputStream compareStream = null;
         try {
-            bpmnStream = getClass().getResourceAsStream(
-                    "/Reference/" + TEST_ID + ".bpmn");
+            bpmnStream = getClass().getResourceAsStream(refResource);
             assertNotNull(bpmnStream);
-            compareStream = getClass().getResourceAsStream(
-                    "/" + TOOL_ID + "/" + TEST_ID + "-" + VARIANT + ".bpmn");
+            compareStream = getClass().getResourceAsStream(vendorResource);
             assertNotNull(compareStream);
             Collection<? extends Output> significantDifferences = new TestRunner()
                     .getSignificantDifferences(bpmnStream, compareStream);
@@ -70,14 +81,14 @@ public class TestRunnerTest {
                     }
                 }
             }
-            assertEquals(28, significantDifferences.size());
+            assertEquals(expectedDiffCount, significantDifferences.size());
 
             TestResults results = new TestResults();
-            org.omg.bpmn.miwg.testresult.Test test = results.addTool(TOOL_ID)
+            org.omg.bpmn.miwg.testresult.Test test = results.addTool(TOOL_ID_YAOQIANG2)
                     .addTest(TEST_ID, VARIANT);
             test.addAll(significantDifferences);
             final File f = new File(new File(new File("target", "xml-compare"),
-                    TOOL_ID), TOOL_ID + "-" + TEST_ID + ".html");
+                    TOOL_ID_YAOQIANG2), TOOL_ID_YAOQIANG2 + "-" + TEST_ID + ".html");
             results.writeResultFile(f);
         } catch (Exception e) {
             e.printStackTrace();
