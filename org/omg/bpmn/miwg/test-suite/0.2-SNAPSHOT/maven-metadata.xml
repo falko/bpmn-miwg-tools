@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.omg.bpmn.miwg</groupId>
+  <artifactId>test-suite</artifactId>
+  <version>0.2-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20141214.125621</timestamp>
+      <buildNumber>6</buildNumber>
+    </snapshot>
+    <lastUpdated>20141214125621</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.2-20141214.125621-6</value>
+        <updated>20141214125621</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.2-20141214.125621-6</value>
+        <updated>20141214125621</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
