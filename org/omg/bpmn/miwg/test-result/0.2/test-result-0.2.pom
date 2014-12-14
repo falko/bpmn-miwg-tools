@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.omg.bpmn.miwg</groupId>
+    <artifactId>tools</artifactId>
+    <version>0.2</version>
+    <relativePath>..</relativePath>
+  </parent>
+  <artifactId>test-result</artifactId>
+    
+  <properties>
+    <java.version>1.6</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <distributionManagement>
+    <site>
+      <id>github-bpmn-miwg</id>
+      <url>scm:git:https://github.com/bpmn-miwg/bpmn-miwg-tools</url>
+    </site>
+  </distributionManagement>
+  
+  <dependencies>
+  	<dependency>
+	    <groupId>org.simpleframework</groupId>
+  		<artifactId>simple-xml</artifactId>
+  		<version>2.7</version>
+  	</dependency>
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <inherited>true</inherited>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+        <version>2.3.2</version>
+      </plugin>
+    </plugins>
+  </build>  
+    
+</project>
