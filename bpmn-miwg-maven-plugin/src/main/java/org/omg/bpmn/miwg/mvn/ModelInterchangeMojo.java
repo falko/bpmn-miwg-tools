@@ -72,13 +72,15 @@ import edu.emory.mathcs.backport.java.util.Collections;
  */
 @Mojo(name = "test", defaultPhase = LifecyclePhase.PROCESS_SOURCES)
 public class ModelInterchangeMojo extends AbstractMojo {
+    protected static final String SUITE_C_PATH = "/";
+
     protected static final String SUITE_B_PATH = "/";
 
     protected static final String SUITE_A_PATH = "/";
 
-    private static final String XML_COMPARE_TOOL_ID = "xml-compare";
+    public static final String XML_COMPARE_TOOL_ID = "xml-compare";
 
-    private static final String XPATH_TOOL_ID = "xpath";
+    public static final String XPATH_TOOL_ID = "xpath";
 
     /**
      * Project instance, needed for attaching the buildinfo file. Used to add
@@ -214,6 +216,8 @@ public class ModelInterchangeMojo extends AbstractMojo {
             return SUITE_A_PATH;
         } else if (b.getName().startsWith("B")) {
             return SUITE_B_PATH;
+        } else if (b.getName().startsWith("C")) {
+            return SUITE_C_PATH;
         } else {
             getLog().warn("File is not part of the BPMN MIWG test suite: " + b);
             return "";
@@ -242,8 +246,7 @@ public class ModelInterchangeMojo extends AbstractMojo {
             Collection<? extends Output> diffs = testTool
                     .getSignificantDifferences(refStream, testStream);
             test.addAll(diffs);
-            getLog().debug(
-"writing test report to: " + f.getAbsolutePath());
+            getLog().debug("writing test report to: " + f.getAbsolutePath());
             results.writeResultFile(f);
 
             String resultKey = app + "-" + testName + "-" + variant;

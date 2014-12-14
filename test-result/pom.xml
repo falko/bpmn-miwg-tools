@@ -13,13 +13,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
-  <distributionManagement>
-    <site>
-      <id>github-bpmn-miwg</id>
-      <url>scm:git:https://github.com/bpmn-miwg/bpmn-miwg-tools</url>
-    </site>
-  </distributionManagement>
-  
   <dependencies>
   	<dependency>
 	    <groupId>org.simpleframework</groupId>
