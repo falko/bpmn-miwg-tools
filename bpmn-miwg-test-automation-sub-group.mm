@@ -1,4 +1,4 @@
-<map version="0.9.0">
+<map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1367825222287" ID="ID_408461467" MODIFIED="1392226262350" TEXT="Test Automation">
 <icon BUILTIN="launch"/>
@@ -57,21 +57,17 @@
 <node CREATED="1372864123213" ID="ID_333767230" MODIFIED="1374071458326" POSITION="right" TEXT="Team Backlog">
 <icon BUILTIN="list"/>
 <node CREATED="1383571471615" ID="ID_1528227093" MODIFIED="1383571513444" TEXT="Decouple results from test cases">
-<node CREATED="1385573353710" ID="ID_1776891772" MODIFIED="1385573381468" TEXT="Format that helps users">
-<node CREATED="1383571205332" ID="ID_1074921085" LINK="http://docs.camunda.org/latest/api-references/bpmn20/" MODIFIED="1383571391693" TEXT="Element Coverage per Tool">
-<node CREATED="1383571339860" ID="ID_683274059" MODIFIED="1383571345363" TEXT="Percentage"/>
-</node>
-<node CREATED="1389198990549" ID="ID_1307819106" MODIFIED="1389198996221" TEXT="Legend"/>
-</node>
-<node CREATED="1389202821323" ID="ID_102566949" MODIFIED="1392833932004" TEXT="Falko: Merge different data sources">
+<node CREATED="1389202821323" ID="ID_102566949" MODIFIED="1394608788458" TEXT="Falko: Merge different data sources">
+<icon BUILTIN="hourglass"/>
 <node CREATED="1389202097970" ID="ID_1684044993" MODIFIED="1393481270954" TEXT="Vendor List from BPI">
 <icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1389202892860" ID="ID_616762954" MODIFIED="1390411476270" TEXT="Manually entered data">
-<node CREATED="1390412928792" FOLDED="true" ID="ID_758408927" MODIFIED="1393436336811" TEXT="Storage Format">
+<node CREATED="1389202892860" FOLDED="true" ID="ID_616762954" MODIFIED="1404327378943" TEXT="Manually entered data">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1390412928792" ID="ID_758408927" MODIFIED="1404327368359" TEXT="Storage Format">
 <icon BUILTIN="info"/>
-<node CREATED="1390413067550" ID="ID_415559790" LINK="https://github.com/bpmn-miwg/bpmn-miwg-test-suite/blob/master/tools-tested-by-miwg.json" MODIFIED="1390413410602" TEXT="JSON">
-<node CREATED="1390413216069" FOLDED="true" ID="ID_103050922" MODIFIED="1390413256971" TEXT="Discussion">
+<node CREATED="1390413067550" FOLDED="true" ID="ID_415559790" LINK="https://github.com/bpmn-miwg/bpmn-miwg-test-suite/blob/master/tools-tested-by-miwg.json" MODIFIED="1404327374224" TEXT="JSON">
+<node CREATED="1390413216069" FOLDED="true" ID="ID_103050922" MODIFIED="1404327372823" TEXT="Discussion">
 <node CREATED="1390413074235" ID="ID_283827546" MODIFIED="1390413104469" TEXT="+ Pull Requests can directly include mergable changes"/>
 <node CREATED="1390413135203" ID="ID_1790660346" MODIFIED="1390413161481" TEXT="+ Diff and History through Git"/>
 <node CREATED="1390413222982" ID="ID_860722761" MODIFIED="1390413251648" TEXT="- More technical format"/>
@@ -107,7 +103,9 @@
 <icon BUILTIN="password"/>
 <icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1389805766767" ID="ID_1276821917" MODIFIED="1389805782049" TEXT="Website URL"/>
+<node CREATED="1389805766767" ID="ID_1276821917" MODIFIED="1404327298281" TEXT="Website URL">
+<icon BUILTIN="button_ok"/>
+</node>
 <node CREATED="1389805560999" ID="ID_912606397" MODIFIED="1389806134226" TEXT="BPI ID">
 <icon BUILTIN="password"/>
 </node>
@@ -126,34 +124,17 @@
 <node CREATED="1389806800238" ID="ID_199977408" MODIFIED="1393436329611" TEXT="Participates in Demos">
 <icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1392842500700" ID="ID_1024771282" MODIFIED="1393481160665" TEXT="Open Source"/>
-<node CREATED="1390412971463" ID="ID_1265714215" MODIFIED="1390413382551" TEXT="TODO">
-<icon BUILTIN="list"/>
-<node CREATED="1390413478069" ID="ID_1654225623" MODIFIED="1392833974561" TEXT="Read JSON file into data table">
+<node CREATED="1392842500700" ID="ID_1024771282" MODIFIED="1394608794784" TEXT="Open Source">
 <icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1390413448086" ID="ID_805472313" MODIFIED="1392833985076" TEXT="Fill file with all data from the current spreadsheet">
+</node>
+<node CREATED="1389806024266" ID="ID_415034879" MODIFIED="1394608879661" TEXT="List of MIWG Members from Denis">
+<icon BUILTIN="stop-sign"/>
+<node CREATED="1394643584125" ID="ID_190864395" MODIFIED="1394643712398" TEXT="Vendors"/>
+<node CREATED="1394643712832" ID="ID_1118808862" MODIFIED="1394643717277" TEXT="Additional Members"/>
+</node>
+<node CREATED="1389202853874" FOLDED="true" ID="ID_1993056267" MODIFIED="1404327321905" TEXT="GitHub Issues">
 <icon BUILTIN="button_ok"/>
-</node>
-<node CREATED="1390413423490" ID="ID_808536488" MODIFIED="1393436162566" TEXT="Comments in JSON">
-<icon BUILTIN="button_cancel"/>
-<node CREATED="1393436164063" ID="ID_924499598" MODIFIED="1393436178020" TEXT="Not shown for now to not offend vendors"/>
-</node>
-<node CREATED="1390413415288" ID="ID_480537015" MODIFIED="1390413415909" TEXT="E-Mail Template and GitHub-Explainations in Readme.md"/>
-<node CREATED="1392842451583" ID="ID_1905859026" MODIFIED="1393434984661" TEXT="Matthias: test-cases-structure.json">
-<icon BUILTIN="button_ok"/>
-</node>
-<node CREATED="1393436042563" ID="ID_1392049259" MODIFIED="1393436142076" TEXT="Matthias: Merge">
-<node CREATED="1393436072296" ID="ID_734219245" LINK="file:///Z:/git/bpmn-miwg-test-suite/A%20-%20Fixed%20Digrams%20with%20Variations%20of%20Attributes/camunda%20Modeler%202.3.0/import-comparison.html" MODIFIED="1393436120305" TEXT="import-comparison.html"/>
-<node CREATED="1393436143158" ID="ID_1945088420" LINK="file:///Z:/git/bpmn-miwg-tools/Scratchpad/JSON/example.html" MODIFIED="1393436155064" TEXT="Scratchpad/JSON/example.html"/>
-</node>
-<node CREATED="1393436366905" ID="ID_359767603" MODIFIED="1393436451496" TEXT="Falko: Ordering of the table"/>
-<node CREATED="1393481107174" ID="ID_1263053644" MODIFIED="1393481387696" TEXT="Link to deep analysis results"/>
-</node>
-</node>
-<node CREATED="1389806024266" ID="ID_415034879" MODIFIED="1389806035752" TEXT="List of MIWG Members from Denis"/>
-<node CREATED="1389202853874" ID="ID_1993056267" MODIFIED="1393481102177" TEXT="GitHub Issues">
-<icon BUILTIN="hourglass"/>
 <node CREATED="1389805580486" ID="ID_710105357" MODIFIED="1389806134226" TEXT="Tool">
 <icon BUILTIN="password"/>
 </node>
@@ -163,7 +144,7 @@
 <node CREATED="1389806780179" ID="ID_1979995627" MODIFIED="1389806790544" TEXT="#Open"/>
 <node CREATED="1389806791205" ID="ID_1817699825" MODIFIED="1389806795521" TEXT="#Closed"/>
 </node>
-<node CREATED="1389202872971" ID="ID_949196127" MODIFIED="1389202888794" TEXT="GitHub Files">
+<node CREATED="1389202872971" FOLDED="true" ID="ID_949196127" MODIFIED="1404327331617" TEXT="GitHub Files">
 <icon BUILTIN="help"/>
 <node CREATED="1389805587307" ID="ID_731388928" MODIFIED="1389806134226" TEXT="Tool">
 <icon BUILTIN="password"/>
@@ -176,7 +157,8 @@
 <node CREATED="1389895572854" ID="ID_563890946" MODIFIED="1389895575856" TEXT="Date"/>
 </node>
 </node>
-<node CREATED="1389202929362" ID="ID_676436686" MODIFIED="1389805883638" TEXT="Vendor Data from BPI (bpmn.org)">
+<node CREATED="1389202929362" FOLDED="true" ID="ID_676436686" MODIFIED="1404327339561" TEXT="Vendor Data from BPI (bpmn.org)">
+<icon BUILTIN="button_cancel"/>
 <node CREATED="1389805471680" ID="ID_929181015" MODIFIED="1389805481835" TEXT="BPM Suite"/>
 <node CREATED="1389805555100" ID="ID_1199946220" MODIFIED="1389806134226" TEXT="BPI ID">
 <icon BUILTIN="password"/>
@@ -186,7 +168,11 @@
 </node>
 <node CREATED="1389805687777" ID="ID_26885700" MODIFIED="1389805794807" TEXT="Link to BPI"/>
 </node>
-<node CREATED="1389806248274" ID="ID_16489034" MODIFIED="1389806255504" TEXT="BPMN Element Coverage"/>
+<node CREATED="1389806248274" FOLDED="true" ID="ID_16489034" MODIFIED="1394608898733" TEXT="BPMN Element Coverage">
+<node CREATED="1383571205332" ID="ID_1074921085" LINK="http://docs.camunda.org/latest/api-references/bpmn20/" MODIFIED="1383571391693" TEXT="Element Coverage per Tool">
+<node CREATED="1383571339860" ID="ID_683274059" MODIFIED="1383571345363" TEXT="Percentage"/>
+</node>
+</node>
 <node CREATED="1389806257637" ID="ID_1960333111" MODIFIED="1389806268253" TEXT="Preserves Layout"/>
 </node>
 <node CREATED="1386178794488" ID="ID_120325111" LINK="http://bpmn-miwg.github.io/bpmn-miwg-tools/bpmn-tool-list/bpmn-tools.html" MODIFIED="1392226894934" TEXT="Make the tools shine!">
@@ -196,26 +182,38 @@
 <font NAME="SansSerif" SIZE="12"/>
 <icon BUILTIN="help"/>
 </node>
-<node CREATED="1387389515549" ID="ID_1932048919" MODIFIED="1387389515549" TEXT="Claims to have BPMN 2.0 Modelling"/>
-<node CREATED="1387387581841" FOLDED="true" ID="ID_1857539098" MODIFIED="1389895790798" TEXT="Vendor is signed up to mailing list">
-<node CREATED="1387387997310" ID="ID_1179516955" MODIFIED="1387389387474" TEXT="Denis: Provides Spreadsheet"/>
+<node CREATED="1387389515549" ID="ID_1932048919" MODIFIED="1394609035331" TEXT="Claims to have BPMN 2.0 Modelling">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1387387581841" FOLDED="true" ID="ID_1857539098" MODIFIED="1394609048855" TEXT="Vendor is signed up to mailing list">
+<icon BUILTIN="stop-sign"/>
+<node CREATED="1387387997310" ID="ID_1179516955" MODIFIED="1394608957942" TEXT="Denis: Provides Spreadsheet">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 <node CREATED="1387387471324" ID="ID_1408648579" MODIFIED="1389199022808" TEXT="Tool has submitted test results">
 <node CREATED="1387385641402" ID="ID_1981664119" MODIFIED="1387387524188" TEXT="Please come and join us (list from bpmn.org?)"/>
-<node CREATED="1387387797276" ID="ID_247096142" MODIFIED="1387387817505" TEXT="Are you using this tool? Then please submit test results!"/>
+<node CREATED="1387387797276" ID="ID_247096142" MODIFIED="1394609035330" TEXT="Are you using this tool? Then please submit test results!">
+<icon BUILTIN="button_ok"/>
+</node>
 <node CREATED="1389199025224" ID="ID_1554911426" MODIFIED="1389199060044" TEXT="Test Date"/>
-<node CREATED="1389201037686" ID="ID_1862595617" MODIFIED="1389201046642" TEXT="available"/>
+<node CREATED="1389201037686" ID="ID_1862595617" MODIFIED="1394609035330" TEXT="available">
+<icon BUILTIN="button_ok"/>
+</node>
 <node CREATED="1389201046918" ID="ID_1053337784" MODIFIED="1389201055136" TEXT="analyzed"/>
 </node>
-<node CREATED="1386180780088" ID="ID_849455380" MODIFIED="1386180788360" TEXT="has Import">
+<node CREATED="1386180780088" ID="ID_849455380" MODIFIED="1394609035330" TEXT="has Import">
+<icon BUILTIN="button_ok"/>
 <node CREATED="1389201193182" ID="ID_336684911" MODIFIED="1389201202740" TEXT="Model"/>
 <node CREATED="1389201202986" ID="ID_1322291263" MODIFIED="1389201205273" TEXT="Diagram"/>
 </node>
-<node CREATED="1386180782621" ID="ID_1860035932" MODIFIED="1386180790783" TEXT="has Export">
+<node CREATED="1386180782621" FOLDED="true" ID="ID_1860035932" MODIFIED="1395782517615" TEXT="has Export">
+<icon BUILTIN="button_ok"/>
 <node CREATED="1389201193182" ID="ID_1407600682" MODIFIED="1389201202740" TEXT="Model"/>
 <node CREATED="1389201202986" ID="ID_653680693" MODIFIED="1389201205273" TEXT="Diagram"/>
 </node>
-<node CREATED="1386180791434" ID="ID_1562128610" MODIFIED="1387387888116" TEXT="has Roundtrip">
+<node CREATED="1386180791434" ID="ID_1562128610" MODIFIED="1394609035329" TEXT="has Roundtrip">
+<icon BUILTIN="button_ok"/>
 <node CREATED="1389201193182" ID="ID_390147339" MODIFIED="1389201202740" TEXT="Model"/>
 <node CREATED="1389201202986" ID="ID_1541338660" MODIFIED="1389201205273" TEXT="Diagram"/>
 </node>
@@ -234,8 +232,12 @@
 </node>
 <node CREATED="1387389403817" ID="ID_337381316" MODIFIED="1389201511971" TEXT="has Issues">
 <icon BUILTIN="help"/>
-<node CREATED="1387391966929" ID="ID_1445209531" MODIFIED="1387391969508" TEXT="# open"/>
-<node CREATED="1387391969838" ID="ID_852084841" MODIFIED="1387391973691" TEXT="# closed"/>
+<node CREATED="1387391966929" ID="ID_1445209531" MODIFIED="1394609035328" TEXT="# open">
+<icon BUILTIN="button_ok"/>
+</node>
+<node CREATED="1387391969838" ID="ID_852084841" MODIFIED="1394609035328" TEXT="# closed">
+<icon BUILTIN="button_ok"/>
+</node>
 <node CREATED="1392225184879" ID="ID_1812983964" MODIFIED="1392225197557" TEXT="In a later stage:">
 <node CREATED="1392225202184" ID="ID_545160975" MODIFIED="1392225210226" TEXT="Traffic lights">
 <icon BUILTIN="stop"/>
@@ -245,8 +247,8 @@
 </node>
 </node>
 <node CREATED="1389201512892" ID="ID_808570236" MODIFIED="1389201518831" TEXT="# Findings"/>
-<node CREATED="1387391996464" ID="ID_1278479459" MODIFIED="1387392025818" TEXT="Participate(s/d) in Demo(s)">
-<icon BUILTIN="help"/>
+<node CREATED="1387391996464" ID="ID_1278479459" MODIFIED="1394609035327" TEXT="Participate(s/d) in Demo(s)">
+<icon BUILTIN="button_ok"/>
 <node CREATED="1389201367137" ID="ID_712788629" MODIFIED="1389201385544" TEXT="Tested in Chain Demo"/>
 </node>
 <node CREATED="1391620724864" ID="ID_750766031" MODIFIED="1391620733015" TEXT="Autolayouting"/>
@@ -254,7 +256,7 @@
 <node CREATED="1391620751056" ID="ID_632140496" MODIFIED="1391620761078" TEXT="between different models"/>
 </node>
 </node>
-<node CREATED="1387384965174" FOLDED="true" ID="ID_618244353" MODIFIED="1389806659856" TEXT="Deeper">
+<node CREATED="1387384965174" FOLDED="true" ID="ID_618244353" MODIFIED="1395962799614" TEXT="Deeper">
 <node CREATED="1387384151037" ID="ID_1063374231" MODIFIED="1387385204093" TEXT="XPath-based Categories">
 <node CREATED="1387385030903" ID="ID_123883129" MODIFIED="1387385042319" TEXT="Depth depends on Test Case"/>
 <node CREATED="1386178996525" ID="ID_1479128728" MODIFIED="1386178999890" TEXT="Containment"/>
@@ -276,18 +278,21 @@
 </node>
 </node>
 </node>
-<node CREATED="1392225504491" ID="ID_1887522288" MODIFIED="1392225557606" TEXT="Collapsable Collums with details for each test case"/>
+<node CREATED="1392225504491" ID="ID_1887522288" MODIFIED="1394609064158" TEXT="Collapsable Collums with details for each test case">
+<icon BUILTIN="stop-sign"/>
+</node>
 <node CREATED="1387385351451" ID="ID_1940604097" MODIFIED="1387385364279" TEXT="Nice to have but very helpful in practice">
 <node CREATED="1386180796722" ID="ID_1476438442" MODIFIED="1387385265838" TEXT="Roundtrip preserves IDs"/>
 </node>
 </node>
 </node>
-<node CREATED="1392846967300" ID="ID_1378214056" MODIFIED="1392846995701" TEXT="Falko/Matthias: Im-/Export Comparison"/>
-<node CREATED="1392847080993" ID="ID_1834386639" MODIFIED="1392847109094" TEXT="Tim?:  Link to deep test results"/>
 </node>
 <node CREATED="1372864204945" ID="ID_1120116121" MODIFIED="1389806230338" TEXT="Human-readable presentation of tool results">
-<node CREATED="1372864560671" ID="ID_795560376" MODIFIED="1378311446133" TEXT="Highlight/scroll(/cut) affected parts of BPMN XML">
-<node CREATED="1375284371413" ID="ID_228297556" MODIFIED="1375284862384" TEXT="Tim: XPath Highlighting"/>
+<node CREATED="1372864560671" ID="ID_795560376" MODIFIED="1394609129767" TEXT="Highlight/scroll(/cut) affected parts of BPMN XML">
+<icon BUILTIN="button_ok"/>
+<node CREATED="1375284371413" ID="ID_228297556" MODIFIED="1394609129768" TEXT="Tim: XPath Highlighting">
+<icon BUILTIN="button_ok"/>
+</node>
 </node>
 <node CREATED="1379515740165" ID="ID_1127428709" MODIFIED="1379521012631" TEXT="Tim: Numbering of findings"/>
 </node>
@@ -329,21 +334,11 @@
 <node CREATED="1370448539755" ID="ID_1093951769" MODIFIED="1375888254607" TEXT="make paths configurable"/>
 </node>
 <node CREATED="1379515870711" ID="ID_243568920" MODIFIED="1379521070609" TEXT="Sven: Double-check that ID changes are preserved in roundtrip"/>
-<node CREATED="1373471405079" FOLDED="true" ID="ID_841451121" MODIFIED="1393434969679" TEXT="Plan Next Live Demo maybe in Washington in Spring 2014">
-<node CREATED="1389196329742" ID="ID_1005300913" MODIFIED="1390406853492" TEXT="Washington">
-<node CREATED="1389196462503" ID="ID_1986571003" MODIFIED="1389196469235" TEXT="starts and passes results"/>
-<node CREATED="1389196473234" ID="ID_1393085283" MODIFIED="1389196477321" TEXT="One Pool"/>
-<node CREATED="1389196611433" ID="ID_1750205584" MODIFIED="1389196620322" TEXT="simulate and/or execute"/>
-</node>
-<node CREATED="1389196432470" ID="ID_497644593" MODIFIED="1389196433161" TEXT="California">
-<node CREATED="1389196595069" ID="ID_470979684" MODIFIED="1389196609260" TEXT="Continues with other pool"/>
-</node>
-<node CREATED="1389196506095" ID="ID_1831801838" MODIFIED="1389196588470" TEXT="Example: Customer Support from BPSim"/>
+<node CREATED="1373471405079" FOLDED="true" ID="ID_841451121" MODIFIED="1400022384064" TEXT="Plan Next Live Demo maybe in Washington in Spring 2014">
 <node CREATED="1389197358047" ID="ID_359434328" MODIFIED="1389197575525" TEXT="VA: Customer =&gt; Truthful Information"/>
 <node CREATED="1389197336006" ID="ID_528058156" MODIFIED="1389197350997" TEXT="CA: Vendors =&gt; Recruting"/>
-<node CREATED="1389197967455" ID="ID_1998267642" MODIFIED="1389197991941" TEXT="Live File Sharing through Drop Box"/>
 <node CREATED="1390406538575" ID="ID_1290864708" MODIFIED="1390406541820" TEXT="45 Minutes"/>
-<node CREATED="1390406868714" ID="ID_1785692936" MODIFIED="1393433174215" TEXT="Tools">
+<node CREATED="1390406868714" FOLDED="true" ID="ID_1785692936" MODIFIED="1395782212136" TEXT="Tools">
 <node CREATED="1390406739718" ID="ID_1939693050" MODIFIED="1390406745086" TEXT="Export Only">
 <node CREATED="1390405961746" ID="ID_1635401596" MODIFIED="1390406731486" TEXT="Blueworks">
 <icon BUILTIN="help"/>
@@ -456,7 +451,81 @@
 </node>
 <node CREATED="1393433280672" ID="ID_583097294" MODIFIED="1393433288523" TEXT="Oracle"/>
 </node>
-<node CREATED="1391620355117" ID="ID_22035885" MODIFIED="1391620363148" TEXT="Hangout =&gt; Youtube"/>
+<node CREATED="1395782310943" ID="ID_1244620175" MODIFIED="1395782407888" TEXT="Finishing Up">
+<node CREATED="1395963255633" ID="ID_1429190734" MODIFIED="1395963258345" TEXT="Press Kit">
+<node CREATED="1395984330544" ID="ID_983005145" MODIFIED="1395984340691" TEXT="List of Participating Tools"/>
+<node CREATED="1395979927107" ID="ID_648003102" MODIFIED="1395979934338" TEXT="Story Board">
+<node CREATED="1395979938154" ID="ID_794267096" MODIFIED="1395979941097" TEXT="Logos"/>
+</node>
+<node CREATED="1395963265212" ID="ID_1632389370" MODIFIED="1395963268095" TEXT="Screenshots">
+<node CREATED="1395983177111" ID="ID_825381013" MODIFIED="1395983182506" TEXT="IBM"/>
+<node CREATED="1395983182898" ID="ID_770190227" MODIFIED="1395983192724" TEXT="2 x Trisotech"/>
+<node CREATED="1395983560595" ID="ID_218712941" MODIFIED="1395983572533" TEXT="itp"/>
+<node CREATED="1395983573548" ID="ID_401775564" MODIFIED="1395983852440" TEXT="2x w4"/>
+<node CREATED="1395983853692" ID="ID_176193184" MODIFIED="1395983856039" TEXT="oracle"/>
+</node>
+<node CREATED="1395983985297" ID="ID_86951478" MODIFIED="1395984000578" TEXT="Logos in Readme"/>
+</node>
+<node CREATED="1395164201736" ID="ID_1556161912" MODIFIED="1395877214034" TEXT="MIWG Demo Speach">
+<node CREATED="1396107257740" ID="ID_600796925" MODIFIED="1396281166351" TEXT="Last Wednesday the BPMN Model Interchange Working Group of the OMG did another impressive demo of the current state of BPMN interchange. Last year in Berlin ###LINK### we already showed 8 different tools working on the same model. This time no less than 15 tools participated in creating a single collaboration diagram."/>
+<node CREATED="1396108954002" ID="ID_1216681434" MODIFIED="1396109038327" TEXT="I represented camunda in the demo using three of our latest BPMN tools:">
+<node CREATED="1396109039333" ID="ID_796721523" MODIFIED="1396109171806" TEXT="The Standalone camunda Modeler, which is based on our Eclipse plugin"/>
+<node CREATED="1396109174602" ID="ID_1153271599" MODIFIED="1396109396526" TEXT="camunda share, which is a discussion platform based on the Open Source camunda-bpmn.js"/>
+<node CREATED="1396109219697" ID="ID_663040902" MODIFIED="1396109261347" TEXT="An early access version of our new Open Source project called bpmn.io"/>
+</node>
+<node CREATED="1396108859661" ID="ID_1425085601" MODIFIED="1396108859661" TEXT=""/>
+<node CREATED="1396109921122" ID="ID_703002930" MODIFIED="1396281325610" TEXT="In addition to the sheer number of tools, we also pushed our limits in several other directions: With 15 tools the time would have not been enough to work in a sequence. Thus, we worked in parallel und merged the different parts together. The following BPMN process shows our story board for the demo."/>
+<node CREATED="1396109945650" ID="ID_533422869" MODIFIED="1396109953388" TEXT="###SCREENSHOT###"/>
+<node CREATED="1396108467758" ID="ID_302208040" MODIFIED="1396282666732" TEXT="Another challenge was, that we wanted to show the demo at two different conferences that unfortunately took place at exactly the same time: The bpmNEXT conference took place near San Francisco whereas the OMG Technical Meeting in Reston was located at other end of the United States near Washington. Since, there was no chance to travel between both conferences in such a short time, we decided to do a live stream of the show through Google Hangout and YouTube. On the one hand this gave us the chance to also include participants and viewers that otherwise would not have had a chance to attend. On the other hand this also gave us a good chance of running into technical issues during the show, but luckily Power Point was the only thing that crashed."/>
+<node CREATED="1396109031298" ID="ID_1269913066" MODIFIED="1396109031298" TEXT=""/>
+<node CREATED="1392637907884" ID="ID_975638908" MODIFIED="1395846056602" TEXT="camunda Message">
+<node CREATED="1392638030161" ID="ID_1606206173" MODIFIED="1396285770528" TEXT="From a camunda perspective we could once again demonstrate that we have BPMN-compliant tools with good usability. You may remeber Jakob&apos;s talk from last year&apos;s bpmNEXT ###LINK### where he presented true roundtripping between third-party business tools  Bruce Silver recogniced that camunda are the first ones to do that well. ###Link### One year leter, thanks to the work of the BPMN MIWG an increasing number of tools support the roundtrip."/>
+</node>
+<node CREATED="1396109620177" ID="ID_139716415" MODIFIED="1396287316870" TEXT="In my role as the lead of MIWG&apos;s Test Automation Sub-Group, I presented the test results for different tools that have been collected and analyzed by the working group"/>
+<node CREATED="1396109723352" ID="ID_1935795782" MODIFIED="1396109794613" TEXT="The main entry point into exploring the test results is a comparison table that lists all tools participating in the MIWG"/>
+<node CREATED="1396109797930" ID="ID_1986897157" MODIFIED="1396109805865" TEXT="###SCREENSHOT###"/>
+<node CREATED="1392638414426" ID="ID_1469919907" MODIFIED="1396109827820" TEXT="Almost all of the tools shown in this table can be used to model processes for later execution in BPMN engines like the camunda BPM platform ###LINK###."/>
+<node CREATED="1395846433596" ID="ID_1212747287" MODIFIED="1395846443583" TEXT="Call for Participation">
+<node CREATED="1395877552767" ID="ID_276494439" MODIFIED="1396287316300" TEXT="If interchange is important to you, we ask you to participate in this effort."/>
+<node CREATED="1395877376572" ID="ID_1396952127" MODIFIED="1395877529951" TEXT="Spread the word and share this story with your peers."/>
+<node CREATED="1395877228118" ID="ID_551825011" MODIFIED="1395877375054" TEXT="Test your favorite BPMN tool, no matter whether you are the vendor or a user of it."/>
+<node CREATED="1396108765096" ID="ID_1067332700" MODIFIED="1396108811662" TEXT="Make yourself heard at your vendor, since some vendors still believe BPMN interchange is not important to their customers."/>
+<node CREATED="1395877221033" ID="ID_206473064" MODIFIED="1395877227732" TEXT="Join the Group">
+<node CREATED="1395877260211" ID="ID_388697561" MODIFIED="1395877281991" TEXT="Everybody can join. There is no need to be an OMG member."/>
+<node CREATED="1395877282998" ID="ID_1214809676" MODIFIED="1395877354798" TEXT="Thus, it is a good way to get a feeling of the standardization work at OMG."/>
+</node>
+</node>
+<node CREATED="1395786973268" ID="ID_943898689" MODIFIED="1396108695381" TEXT="As a funny coincident, the demo took place at the international Document Freedom Day, which is an initiative of the Free Software Foundation to foster the use of Open Standards like BPMN."/>
+</node>
+<node CREATED="1395842766003" ID="ID_870583197" MODIFIED="1395842767767" TEXT="Table">
+<node CREATED="1395807488555" ID="ID_1379047650" MODIFIED="1395807496414" TEXT="Circulate Link and Screenshot">
+<node CREATED="1395978379747" LINK="http://bpmn-miwg.github.io/bpmn-miwg-tools/bpmn-tools-tested-for-model-interchange-screenshot.png" MODIFIED="1395978379747" TEXT="[&lt;img height=&quot;350&quot; src=&quot;http://bpmn-miwg.github.io/bpmn-miwg-tools/bpmn-tools-tested-for-model-interchange-screenshot.png&quot;&gt;](http://bpmn-miwg.github.io/bpmn-miwg-tools/)"/>
+</node>
+<node CREATED="1395984346655" ID="ID_1450175500" MODIFIED="1395984356398" TEXT="Trisotech no longer partial"/>
+<node CREATED="1395805095934" ID="ID_138956700" MODIFIED="1395805101452" TEXT="Freeware"/>
+<node CREATED="1395845129504" ID="ID_1773612713" MODIFIED="1395845134678" TEXT="Add Activiti Designer"/>
+</node>
+<node CREATED="1395783894295" ID="ID_212894325" MODIFIED="1395783967511" TEXT="Deep results overview">
+<node CREATED="1395783968398" ID="ID_1886352911" MODIFIED="1395783975627" TEXT="Not all showing up"/>
+<node CREATED="1395783976426" ID="ID_610553937" MODIFIED="1395783989576" TEXT="No numbers for XML compare"/>
+</node>
+<node CREATED="1387458023936" ID="ID_1600380476" MODIFIED="1387458050953" TEXT="Supporting Company Logos um deutlich zu machen, dass es nicht nur Trisotech ist"/>
+<node CREATED="1395842787150" ID="ID_1815599783" MODIFIED="1395842792312" TEXT="Visual Comparison">
+<node CREATED="1395245330321" ID="ID_240572942" MODIFIED="1395782535272" TEXT="W4 + in comparison"/>
+<node CREATED="1395788361579" ID="ID_710644971" MODIFIED="1395788372214" TEXT="Sort tool list in comparison"/>
+<node CREATED="1395396199621" ID="ID_1588046963" MODIFIED="1395782682101" TEXT="Reference next to Export"/>
+<node CREATED="1395782727093" ID="ID_42634881" MODIFIED="1395842817614" TEXT="Signavio &amp; ADONIS Export results not showing in Comparison"/>
+<node CREATED="1395782889594" ID="ID_222120300" MODIFIED="1395782911740" TEXT="Remove Tools that have not submitted results"/>
+</node>
+</node>
+<node CREATED="1395783528053" ID="ID_368426552" MODIFIED="1395783532533" TEXT="After the Demo">
+<node CREATED="1395783518486" ID="ID_1094400340" MODIFIED="1395783526856" TEXT="Get rid of the Spreadsheet">
+<node CREATED="1390413415288" ID="ID_480537015" MODIFIED="1390413415909" TEXT="E-Mail Template and GitHub-Explainations in Readme.md"/>
+</node>
+<node CREATED="1395783497167" ID="ID_1675073827" MODIFIED="1395783506613" TEXT="Folder structure">
+<node CREATED="1395784585525" ID="ID_408799927" MODIFIED="1395784596852" TEXT="There is even a typo"/>
+</node>
+</node>
 </node>
 <node CREATED="1381334703378" ID="ID_1915920493" MODIFIED="1381334723758" TEXT="Contact vendors and point them to their result page"/>
 </node>
