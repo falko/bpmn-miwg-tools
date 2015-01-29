@@ -19,23 +19,32 @@ If you are one of the team that maintains the tools and the web site of results 
 
 1. Ensure you have Maven installed
 2. Ensure you have the latest tools in your local Maven repository (this is a temporary step until we set up a stable maven repo for the tools). If you have not done this previously then follow these commands: 
-```
-   git clone https://github.com/bpmn-miwg/bpmn-miwg-tools.git
-   cd bpmn-miwg-tools
-   mvn clean install 
-```
+  
+  ```
+    git clone https://github.com/bpmn-miwg/bpmn-miwg-tools.git
+    cd bpmn-miwg-tools
+    mvn clean install 
+  ```
+  
 3. Clone / Pull the latest test suite (reference and vendor files) from this repo: https://github.com/bpmn-miwg/bpmn-miwg-test-suite
+4. Put your GitHub credentials into your Maven settings.xml (by default this belongs in your user home dir). More details on the [Github maven plugin page](https://github.com/github/maven-plugins#authentication-example)
 4. Run all the tools, generate reports and push to the Maven repo with this Maven command:
-```
-   # cd to the dir you just cloned the repo to
-   mvn clean deploy 
-```
+  
+  ```
+    # cd to the dir you just cloned the repo to
+    mvn clean deploy 
+  ```
+  
 5. Pull the reports into the site which is hosted on the gh-pages branch of this repo. 
-```
-   mvn process-resources
-```
+  
+  ```
+    mvn process-resources
+  ```
+  
 6. Update the json files that hold statistics for the table displayed on the site. NOTE: This currently only works on Linux and the Mac command line tools are not compatible.
-```
-   . ./update-json-data.sh
-```
+  
+  ```
+    . ./update-json-data.sh
+  ```
+  
 7. Commit and push the latest site.
