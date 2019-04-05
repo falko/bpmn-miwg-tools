@@ -240,7 +240,7 @@
                 }
 
                 var result = renderTrafficLight(complete, type, full);
-                return result + ' ' + data + '/' + referenceCount;
+                return '<span class="sr-only">' + data/referenceCount + '</span>' + result + ' ' + data + '/' + referenceCount;
               }
 
               function renderLicense(data, type, full) {
