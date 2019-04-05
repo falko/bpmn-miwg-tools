@@ -223,7 +223,11 @@
                 return renderTestResultsSubmittedInCategory(data, type, full, 18);
               }
 
-              function renderTestResultsSubmittedInCategory(data, type, full, referenceCount, penalizeZero = false) {
+              function renderTestResultsSubmittedInCategory(originalData, type, full, referenceCount, penalizeZero = false) {
+                var data = originalData;
+                if (originalData > referenceCount) {
+                  data = referenceCount;
+                }
                 var complete = false;
                 if (data >= referenceCount) {
                   complete = true;
