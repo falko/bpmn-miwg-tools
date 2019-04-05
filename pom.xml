@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.omg.bpmn.miwg</groupId>
   <artifactId>tools-github-pages</artifactId>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.4-SNAPSHOT</version>
   <name>BPMN MIWG Tools GitHub Pages</name>
   <description>Aggregates test results and tool reports</description>
   <packaging>jar</packaging>
@@ -16,7 +16,7 @@
   <repositories>
     <repository>
       <id>bpmn-miwg-test-suite-mvn-repo</id>
-      <url>https://raw.github.com/bpmn-miwg/bpmn-miwg-test-suite/mvn-repo/</url>
+      <url>https://raw.githubusercontent.com/bpmn-miwg/bpmn-miwg-mvn-repo/master/snapshots</url>
       <snapshots>
         <enabled>true</enabled>
         <updatePolicy>always</updatePolicy>
@@ -67,7 +67,10 @@
                     <exclude name="pom.xml"/>
                     <exclude name="README.md"/>
                     <exclude name="update-json-data.sh"/>
+                    <exclude name="submissions.sh"/>
+                    <exclude name="submissions.json"/>
                     <exclude name="visual-test-result-comparison.html"/>
+                    <exclude name="visual-test-result-comparison-bounds.html"/>
                   </fileset>
                 </delete>
                 <echo>Unzipping test suite from ${maven.dependency.org.omg.bpmn.miwg.test-suite.jar.path}</echo>
