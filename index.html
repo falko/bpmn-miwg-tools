@@ -110,8 +110,8 @@
       //          "sAjaxSource": toolsUrl,
       //          "sAjaxDataProp": "tools",
                 "aaData": toolsTestedByMIWG.tools,
-                           /* [ 2, BPMN   ], [ 5, Round  ], [ 4, Export ], [ 3, Import ], [ 12, Schema ],  [ 7, Demo   ], [ 8, Last   ], [ 9, Cat A  ], [ 12, Cat B  ], [ 14, Cat C  ],    [ 14, IssueO ], [ 15, IssueC ]    [ 0, Vendo ], [1, Tool  ] */
-                "aaSorting": [[ 2, "desc" ], [ 5, "desc" ], [ 4, "desc" ], [ 3, "desc" ], [ 16, "desc" ],  [ 7, "desc" ], [ 8, "desc" ], [ 10, "desc" ], [ 12, "desc" ], [ 14, "desc" ], /*[ 14, "desc" ], [ 15, "desc" ] */ [ 0, "asc" ], [1, "asc" ]],
+                           /* [ 2, BPMN   ], [ 5, Round  ], [ 4, Export ], [ 3, Import ], [ 12, Schema ],  [ 7, Demo   ], [ 8, Last   ], [  9, Cat A  ], [ 12, Cat B  ], [ 14, Cat C  ], [ 18, Licens ],   [ 14, IssueO ], [ 15, IssueC ]    [ 0, Vendo ], [1, Tool  ] */
+                "aaSorting": [[ 2, "desc" ], [ 5, "desc" ], [ 4, "desc" ], [ 3, "desc" ], [ 16, "desc" ],  [ 7, "desc" ], [ 8, "desc" ], [ 10, "desc" ], [ 12, "desc" ], [ 14, "desc" ], [ 18, "desc" ], /*[ 14, "desc" ], [ 15, "desc" ] */ [ 0, "asc" ], [1, "asc" ]],
                 "aoColumns": [
                     /* 0 */ { "mData": "vendor" },
                     /* 1 */ { "mData": "tool",
@@ -162,8 +162,8 @@
                       },
                       "bVisible" : false },
                     /* 17 */ { "mData": "schemasValid", "mRender": renderSchemasValid, "iDataSort": 16 },
-                    /* 18 */ { "mData": "website", "mRender": renderWebsite },
-//                     { "mData": "openSource", "mRender": renderLicense },
+                    /* 18 */ { "mData": "openSource", "mRender": renderLicense },
+                    // /* 19 */ { "mData": "website", "mRender": renderWebsite },
                     /*{ "mData": "openIssues",
                       "mRender": function ( data, type, full ) {
                         return '<a href="https://github.com/bpmn-miwg/bpmn-miwg-test-suite/issues?state=open&labels=Tool%3A+' + full.tool.replace(/\+/g, '%2b').replace(/ /g, '+') + '"><strong>' + data + '</strong></a>';
@@ -263,24 +263,24 @@
               }
 
               function renderLicense(data, type, full) {
-		var result = '';
+                var result = ''; // too big: renderTrafficLight((data ? true : "partial"), type, full);
                 if (data) {
-                  result = 'Open&nbsp;Source';
+                  result = result + 'Open&nbsp;Source';
                 } else {
-                  result = 'Commercial';
+                  result = result + 'Proprietary';
                 }
-		if (full.website.length > 0) {
-		  result = '<a href="'+full.website+'">'+result+'</a>';
-              }
-		return result;
+                if (full.website.length > 0) {
+                  result = '<a href="'+full.website+'" target="_blanck">' /* too big: + renderIcon('new-window', '', 'website') */ + result + '</a>';
+                }
+                return result;
               }
 
               function renderWebsite(data, type, full) {
-		var result = '';
+                var result = '';
                 if (data) {
-		  result = '<a href="'+data+'" target="_blanck">' + renderIcon('new-window', '', 'website') + '</a>';
-		}
-		return result;
+                  result = '<a href="' + data + '" target="_blanck">' + renderIcon('new-window', '', 'website') + '</a>';
+                }
+                return result;
               }
 
               function renderTrafficLight(data, type, full) {
@@ -354,8 +354,8 @@
             <th>C Results Submitted</th>
             <th>Schema-valid</th>
             <th>Schema-valid</th>
-            <th>Website</th>
-            <!--<th>License</th>-->
+            <th>License</th>
+            <!-- <th>Website</th> -->
             <!--<th>Open Issues</th>
             <th>Closed Issues</th>-->
 <!--             <th>Notes</th> -->
